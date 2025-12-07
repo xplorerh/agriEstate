@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Full Screen Features Overview Section -->
+<h3 class="txt-primary bg-clr py-3 mb-0" style="text-align: center; margin-top: 2rem; "> Explore Our Features</h3>
+<section class="features py-5  bg-light d-flex align-items-center text-dark">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3 class="fw-bold txt-primary" >Smart Farming Technology</h3>
+                <p class="txt-clr">
+                    Agri E-State incorporates state-of-the-art IoT sensors and AI-powered analytics to monitor soil health, plant growth, and environmental factors. This ensures precision agriculture, optimizing resources and maximizing yield. The system integrates real-time data collection with predictive analytics, enabling farmers to make informed decisions about irrigation, fertilization, and pest management. With remote monitoring and automated processes, Agri E-State reduces manual labor and operational costs. Additionally, the platform provides detailed insights through user-friendly dashboards, ensuring transparency and ease of use.
+                </p>
+                <p class="txt-clr">
+                    By fostering sustainable practices, it supports environmental conservation while boosting productivity.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                <img src="{{ url_for('static', filename='smart_farming.png') }}" alt="Smart Farming" class="img-fluid shadow rounded" style="height: 25em;">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Full Screen Specialized Units Section -->
+<h3 class="txt-primary bg-clr py-3 mb-0" style="text-align: center; margin-top: 2rem; ">Specialized Units for Efficient Farming</h3>
+<section class="units py-5 d-flex align-items-center text-dark">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Example of Specialized Unit Cards -->
+            <div class="col-md-4">
+                <div class="card shadow border-light">
+                    <img src="{{ url_for('static', filename='planting_unit.png') }}" alt="Planting Unit" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title txt-primary">Planting Unit</h5>
+                        <p class="card-text">Automated systems designed to ensure efficient seed planting, optimizing crop growth and minimizing waste.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="card shadow border-light">
+                    <img src="{{ url_for('static', filename='seeding_unit.jpg') }}" alt="Seeding Unit" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title txt-primary">Seeding Unit</h5>
+                        <p class="card-text">Robotic seeding technology ensuring precise placement and optimal conditions for plant germination.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow border-light">
+                    <img src="{{ url_for('static', filename='irrigation_unit.jpg') }}" alt="Irrigation Unit" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title txt-primary">Irrigation Control</h5>
+                        <p class="card-text">IoT-based systems for real-time irrigation control, optimizing water usage for crops and reducing waste.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}
